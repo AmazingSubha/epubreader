@@ -16,9 +16,6 @@
 package com.folioreader.ui.activity
 
 import android.Manifest
-import android.animation.Animator
-import android.animation.ArgbEvaluator
-import android.animation.ValueAnimator
 import android.app.Activity
 import android.app.ActivityManager
 import android.content.BroadcastReceiver
@@ -38,7 +35,6 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
@@ -57,7 +53,6 @@ import com.folioreader.R
 import com.folioreader.model.DisplayUnit
 import com.folioreader.model.HighlightImpl
 import com.folioreader.model.event.MediaOverlayPlayPauseEvent
-import com.folioreader.model.event.ReloadDataEvent
 import com.folioreader.model.locators.ReadLocator
 import com.folioreader.model.locators.SearchLocator
 import com.folioreader.ui.adapter.FolioPageFragmentAdapter
@@ -363,7 +358,7 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
         val config = AppUtil.getSavedConfig(applicationContext)!!
         val wrapper: Context = ContextThemeWrapper(this, R.style.PopupMenu)
         bookMenu = PopupMenu(wrapper, ivMenu)
-        bookMenu!!.menuInflater.inflate(R.menu.book_menu, bookMenu!!.menu)
+        bookMenu!!.menuInflater.inflate(R.menu.folio_book_menu, bookMenu!!.menu)
         bookMenu!!.menu.setGroupCheckable(1, true, false)
         val item = bookMenu!!.menu.findItem(R.id.nightMode)
         if (config.isNightMode) {
