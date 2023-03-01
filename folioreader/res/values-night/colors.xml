@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryVariant">#000000</color>
+    <color name="colorOnPrimary">#484848</color>
+
+    <color name="colorSecondary">#607d8b</color>
+    <color name="colorSecondaryVariant">#34515e</color>
+    <color name="colorOnSecondary">#8eacbb</color>
+
+    <color name="textColorPrimary">#AAA7A7</color>
+    <color name="textColorSecondary">#AAA7A7</color>
+
+    <color name="text_color_dark">#737070</color>
+
+    <color name="white">#000000</color>
+    <color name="black">#ffffff</color>
+
+    <color name="borderColor">#5E554F</color>
+
+    <color name="tabIndicatorColor">#F7F7F7</color>
+
+    <color name="list_bg_Color">#252424</color>
+</resources>
