@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/nightMode"
+        android:id="@+id/folioNightMode"
         android:checkable="true"
         android:title="@string/night_mode"
         android:enabled="true"

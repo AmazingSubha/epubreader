@@ -360,7 +360,7 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
         bookMenu = PopupMenu(wrapper, ivMenu)
         bookMenu!!.menuInflater.inflate(R.menu.folio_book_menu, bookMenu!!.menu)
         bookMenu!!.menu.setGroupCheckable(1, true, false)
-        val item = bookMenu!!.menu.findItem(R.id.nightMode)
+        val item = bookMenu!!.menu.findItem(R.id.folioNightMode)
         if (config.isNightMode) {
             item.isChecked = true
             setNightMode()
@@ -370,7 +370,7 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
         }
         bookMenu!!.setOnMenuItemClickListener { menuItem: MenuItem ->
             when (menuItem.itemId) {
-                R.id.nightMode -> {
+                R.id.folioNightMode -> {
                     if (menuItem.isChecked) {
                         menuItem.isChecked = false
                         config.isNightMode = false
